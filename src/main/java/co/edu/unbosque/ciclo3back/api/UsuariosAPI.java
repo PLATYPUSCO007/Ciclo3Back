@@ -33,8 +33,8 @@ public class UsuariosAPI {
 	}
 	
 	@DeleteMapping("/eliminar/{id}")
-	public void eliminar(@PathVariable("id") Integer id) {
-		usuariosDAO.deleteById(id);
+	public void eliminar(@PathVariable("id") String id) {
+		usuariosDAO.deleteById(Integer.parseInt(id));
 	}
 	
 	@PutMapping("/actualizar")
