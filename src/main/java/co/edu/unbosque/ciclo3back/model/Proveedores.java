@@ -7,7 +7,7 @@ import javax.persistence.Id;
 public class Proveedores {
 	
 	@Id
-	private int nitproveedor;
+	private int nit_proveedor;
 	private String ciudad_proveedor;
 	private String direccion_proveedor;
 	private String nombre_proveedor;
@@ -15,10 +15,10 @@ public class Proveedores {
 	
 	
 	public int getNit_proveedor() {
-		return nitproveedor;
+		return nit_proveedor;
 	}
 	public void setNit_proveedor(int nitproveedor) {
-		this.nitproveedor = nitproveedor;
+		this.nit_proveedor = nitproveedor;
 	}
 	public String getNombre_proveedor() {
 		return nombre_proveedor;
